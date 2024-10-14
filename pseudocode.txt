@@ -1,0 +1,30 @@
+Wordle
+
+1. Define an array of words
+   Select a random word from the array using math.random
+   store the word in an array (Array 1) (each letter in one index), this array will be used to store the letters of the winning word.
+
+2. Create a keyboard for user input
+   For each letter there will be an event listener and will be used to capture the letters entered by the user
+
+3. Define User input array (Array 2)
+   When the user clicks on a letter it will be added to (Array 2)
+   Each letter will be stored in one index
+   This array will store the user word and will be used to be compared with array 1 and check if the user entered the correct word or not.
+
+4. Define a variable called (correctAnswer)
+   Set it to false at the beginning, the purpose of this variable is to keep track of the user found the correct answer or not.
+   If it is false the player will lose, otherwise player will win.
+
+5. Define a variable called (numberOfAttempts)
+   Used to track number of attempts for user (Increment by 1 after each user attempt until it reaches 5, user will lose if correctAnswer is false)
+   If numberOfAttempts is less than 5 and numberOfAttempts is false , user will have a chance to enter a new word again.
+   If numberOfAttempts is equal to 5 and correctAnswer is false user will lose.
+
+6. Compare Array 1 and Array 2 (Repeated when user enter a new word)
+   Each letter in Array 2 will be compared with all letters in array 1 (Loop through both arrays and compare the letters in correspondence index) to check if the player entered the correct word or not
+   numberOfAttempts should be less than 5 before starting the steps below:
+   - If the letter exist in Array 1 (same letter and same index) letter will turn into green (change css class)
+   - If the letter exist in Array 1 (same letter but not same index) letter will turn into yellow (change css class)
+   - If the letter does not exist in Array 1, it will be grey (change css class)
+   - If all letters in Array 1 exactly match Array 2 ( correctAnswer is true) Player wins
