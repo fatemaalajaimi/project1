@@ -267,8 +267,8 @@ const handleInput = (event) => {
 
 const init = () => {
   // 1- choose a random word
-  // fetchWord()
-  chooseRandomWord()
+  fetchWord()
+  //chooseRandomWord()
   console.log(randomWordArray)
 
   // 2- Initialize everything
