@@ -115,6 +115,20 @@ img {
   animation: horizontal-shaking 0.7s;
 }
 
-h1 {
+#random-word {
   display: none;
+}
+
+.game-name-container {
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-name {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
