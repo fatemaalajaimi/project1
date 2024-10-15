@@ -114,3 +114,7 @@ img {
 .container-horizontal-shaking {
   animation: horizontal-shaking 0.7s;
 }
+
+h1 {
+  display: none;
+}

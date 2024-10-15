@@ -89,8 +89,8 @@ const compareWords = () => {
     currentAttemptArray = fifthWord
   }
 
-  console.log(randomWordArray)
-  console.log(currentAttemptArray)
+  // console.log(randomWordArray)
+  // console.log(currentAttemptArray)
 
   let htmlAttributeId
 
@@ -269,6 +269,7 @@ const init = () => {
   // 1- choose a random word
   // fetchWord()
   chooseRandomWord()
+  console.log(randomWordArray)
 
   // 2- Initialize everything
 
@@ -312,10 +313,6 @@ const init = () => {
     key.style.backgroundColor = '#F0F0F0'
     key.addEventListener('click', handleInput)
   })
-
-  // allKeys.forEach((key) => {
-  //   key.addEventListener('click', handleInput)
-  // })
 
   document.querySelector('.try-again-container').style.display = 'none'
   document.querySelector('.play-again-container').style.display = 'none'
